@@ -1,0 +1,31 @@
+spring:
+  main:
+    banner-mode: 'off'
+  application:
+    name: eureka-server
+server:
+  port: 9999
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+#  server:
+#    waitTimeInMsWhenSyncEmpty: 0
+#    enableSelfPreservation: true
+#    response-cache-update-interval-ms: 500
+#    eviction-interval-timer-in-ms: 500
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+logging:
+  level:
+    com.spring.boot: info
+    org: error
+    com.netflix: error
+info:
+  app:
+    name: Eureka Server
+    description: Eureka Server for My POC
+    version: 1.0.0
