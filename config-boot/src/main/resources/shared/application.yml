@@ -1,0 +1,27 @@
+eureka:
+  client:
+    fetch-registry: true
+#    initialInstanceInfoReplicationIntervalSeconds: 0
+#    instance-info-replication-interval-seconds: 1
+#    registry-fetch-interval-seconds: 1
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
+  instance:
+#    leaseRenewalIntervalInSeconds: 1
+#    leaseExpirationDurationInSeconds: 1
+    prefer-ip-address: true
+server:
+  error:
+    whitelabel:
+      enabled: false
+  tomcat:
+    max-threads: 3
+logging:
+  level:
+    com.spring.boot: info
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:7777/oauth-service/oauth/check_token
+ribbon:
+  ServerListRefreshInterval: 1000

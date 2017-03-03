@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 1110
+info:
+  app:
+    name: OAuth Server
+    description: OAuth Server for Security - client_credentials
+    version: 1.0.0  
+#  ssl:
+#    key-store: keystore.p12
+#    key-store-password: password
+#    keyStoreType: PKCS12
+#    keyAlias: tomcat
+    
+#logging:
+#  level:
+#    org.springframework : error
+#    org.hibernate: error
+#    com.spring.boot.oauth: trace

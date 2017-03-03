@@ -1,0 +1,27 @@
+test:
+  message: hello spring boot
+  two: hello test
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 1111
+info:
+  app:
+    name: REST 1 Server
+    description: REST Application
+    version: 1.0.0
+
+    

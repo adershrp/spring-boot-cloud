@@ -1,0 +1,16 @@
+server:
+  port: 1114
+info:
+  app:
+    name: Car Model Server
+    description: Car Model Server Application
+    version: 1.0.0
+message:
+  template: Car Model Service called by, %s !...
+security:
+  oauth2:
+    client:
+      clientId: carmodel-service
+      clientSecret: password
+      grant-type: client_credentials
+      scope: server  

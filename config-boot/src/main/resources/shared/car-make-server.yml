@@ -1,0 +1,16 @@
+server:
+  port: 1113
+info:
+  app:
+    name: Car Make Server
+    description: Car Make Server Application
+    version: 1.0.0
+message:
+  template: Car Make Service called by, %s !...
+security:
+  oauth2:
+    client:
+      clientId: carmake-service
+      clientSecret: password
+      grant-type: client_credentials
+      scope: server  

@@ -1,0 +1,16 @@
+server:
+  port: 1115
+info:
+  app:
+    name: Car Supply Server
+    description: Car Supply Server Application
+    version: 1.0.0
+message:
+  template: Car Supply Service called by, %s !...
+security:
+  oauth2:
+    client:
+      clientId: carsupply-service
+      clientSecret: password
+      grant-type: client_credentials
+      scope: server  
