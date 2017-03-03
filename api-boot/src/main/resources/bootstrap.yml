@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      fail-fast: false
+      password: user
+      username: user
+      enabled: true
+      discovery:
+        service-id: config-server
+  application:
+    name: api-server
