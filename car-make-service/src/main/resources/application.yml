@@ -1,0 +1,10 @@
+spring:
+  main:
+    banner-mode: 'off'
+#security:
+#  oauth2:
+#    client:
+#      clientId: carmake-service
+#      clientSecret: password
+#      grant-type: client_credentials
+#      scope: server

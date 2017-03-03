@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        service-id: config-server
+      password: user
+      username: user
+      enabled: true
+  application:
+    name: car-make-server
